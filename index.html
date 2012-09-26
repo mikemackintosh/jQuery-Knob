@@ -7,10 +7,47 @@
         <script>
             $(function() {
                 $(".knob").knob(
-                                {
-                                'change':function(e){console.log(e);}
-                                }
-                            );
+                    {
+                        'change':function(e){console.log(e);}
+                    }
+                );
+                
+                //circular progrress bar
+
+		$(".greenCircle").knob({
+            'min':0,
+            'max':100,
+            'readOnly': true,
+            'width': 80,
+            'height': 80,
+            'fgColor': '#9FC569',
+            'dynamicDraw': true,
+            'thickness': 0.2,
+            'tickColorizeValues': true
+        });
+        $(".redCircle").knob({
+            'min':0,
+            'max':100,
+            'readOnly': true,
+            'width': 80,
+            'height': 80,
+            'fgColor': '#ED7A53',
+            'dynamicDraw': true,
+            'thickness': 0.2,
+            'tickColorizeValues': true
+        });
+        $(".blueCircle").knob({
+            'min':0,
+            'max':100,
+            'readOnly': true,
+            'width': 80,
+            'height': 80,
+            'fgColor': '#88BBC8',
+            'dynamicDraw': true,
+            'thickness': 0.2,
+            'tickColorizeValues': true
+        });
+
             });
         </script>
     </head>
